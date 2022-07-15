@@ -302,7 +302,7 @@ function init() {
 		zoom: 17,
 
 		// The latitude and longitude to center the map (always required)
-		center: new google.maps.LatLng(30.609788, 32.268555),	// Change to your latitude & longitude
+		center: new google.maps.LatLng(19.244229, 73.134236),	//  latitude & longitude
 
 		scrollwheel: false,
 
@@ -430,14 +430,14 @@ function init() {
 
 	// Let"s also add a marker while we"re at it
 	var marker = new google.maps.Marker({
-		position: new google.maps.LatLng(30.609788, 32.268555),	// Change to your latitude & longitude
+		position: new google.maps.LatLng(19.244229, 73.134236),	// Change to your latitude & longitude
 		/* animation:google.maps.Animation.BOUNCE, Make the marker bounce */
 		map: map,
-		title: "Marqa Studio"		// Change to your text
+		title: "Jain Society"		// Location name
 	});
 
 	var infowindow = new google.maps.InfoWindow({
-		content: "Marqa Studio"		// Change to your text
+		content: "Jain Society"		// Location name
 	});
 
 	google.maps.event.addListener(marker, "click", function () {
