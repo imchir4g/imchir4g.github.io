@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1,300&display=swap');
+
+html,
+body {
+    height: 100%;
+    font-size: 1rem;
+    font-family: 'Roboto',sans-serif;
+}
+.page-header {
+    margin-top: 3rem;
+    font-size: 1rem;
+    color: #fff;
+}
+/*--------------------------------------------hero main image*/
+.img1 {
+    margin-top: 3rem;
+    max-width: 90%;
+    max-height: 100%;
+    display: block; /* remove extra space below image */
+    border-radius: 500px;
+}
+.page-header h3 {
+    text-transform: uppercase;
+}
+/*--------------------------------------------adapted from code institute tutorial*/
+.callout-container {
+    height: 100vh;
+    background: url('../images/img1.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;/*relative parent of absolute child */
+}
+.features-bg--color {
+    background-color: rgba(161, 43, 240, 0.541);
+    color: #fff;
+}
+.industry-bg--color {
+    background-color: rgb(153, 0, 255);
+    color: #fff;
+}
+.wrapper-testimonial {
+    background-color:#5DF15D;
+}
+.opaque-overlay {
+    position: absolute;/*absolute child of relative parent*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.jumbotron {
+    background-color: transparent;
+}
+/*--------------------------------------------Navbar*/
+.navbar {
+       background-color: rgba(0, 0, 0, 0.35);
+}
+.navbar-brand {
+    font-size: 2em;
+    padding: .3em;
+    font-weight: 700;
+    font-style: italic;
+}
+.navbar-dark .navbar-brand  {
+    color: rgb(245, 43, 110);
+}
+.block-divider {
+    background-color: #fff;
+    height: 5px;
+    margin-bottom: 15px;
+}
+.block-divider--white {
+    background-color: #fff;
+}
+.block-divider--short {
+    width: 40px;
+}
+/*--------------------------------------------home-features*/
+.feature-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+.feature-header h2 {
+    margin-top: 0;
+}
+.features-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.jumbotron h1 {
+    color: #fff;
+}
+.jumbotron .lead {
+    color: #fff;
+}
+.jumbotron small {
+    font-size: 60%;
+    font-style: italic;
+    color: #d0d0d0;
+}
+.mission {
+    color: rgb(245, 43, 110);
+    font-weight: 700;
+}
+.discord a{
+    color:#fff;
+    text-decoration: none;
+}
+.navbar .navbar-toggler {
+    border: 0;
+}
+/*--------------------------------------------player testimonial*/
+.test-img {
+    height: 150px;
+    width: 150px;
+}
+.testimonial {
+    margin-bottom: 0px;    
+}
+.testimonial h2 {
+    color: black;
+}
+.content-container {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+.player-header {
+    margin-bottom: 0;
+    border-bottom: 0;
+    text-align: center;
+}
+.player-header h2 {
+    margin-top: 0;
+}
+.quote {
+    text-align: center;
+}
+.block-divider--black {
+    background-color: black;
+    width: 40px;
+    height: 5px;
+    margin-bottom: 60px;
+}
+/*--------------------------------------------footer*/
+footer {
+    background-color: #525252;
+    min-height: 120px;
+    margin: 0;
+    color: #fafafa;
+}
+.social-links {
+    padding-bottom: 15px;
+}
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 13px;
+    line-height: 7px;
+    color: #fafafa;
+    background: #8f8f8f;
+    margin-top: 20px;
+}
+/*--------------------------------------------tournament*/
+.tournament-container {
+    height: 100vh;
+    background: url('../images/tournament.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;/*relative parent of absolute child */
+}
+.tournament-overlay {
+    position: absolute;/*absolute child of relative parent*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.tournament-bg-color {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.card {
+    width: 80%;
+    height: 90%;
+    margin: 0 auto; 
+    float: none;   
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+}
+/*--------------------------------------------contact*/
+.contact-container {
+    height: 100vh;
+    background: url('../images/contact.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;/*relative parent of absolute child */
+}
+.contact-overlay {
+    position: absolute;/*absolute child of relative parent*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.contact-card {
+    border-radius: 10px;
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.block-divider--contact {
+    background-color: #fff;
+    width: 15px;
+}
+.card-title {
+    text-transform: uppercase;
+}
+.card-header {
+    text-align: center;
+}
+.card-body-contact {
+    color: #fff;
+
+}
+.card-body-contact a {
+    margin: 8px;
+}
+.fa-paper-plane {
+    color: rgb(245, 43, 110);
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+/*--------------------------------------------community*/
+.community-container {
+    height: 100vh;
+    background: url('../images/together.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;/*relative parent of absolute child */
+}
+.community-overlay {
+    position: absolute;/*absolute child of relative parent*/
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.block-divider-community-white {
+    background-color: #fff;
+    width: 45px;
+}
+.community-benefits h2 {
+    color: #fff;
+}
+.community {
+    color: #fff;
+    padding: 30px;
+    margin: 10px;
+}
+.comms {
+    background-color: rgba(0, 0, 0, 0.25);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    color: #fff;
+}
+.fa-meteor .fa-trophy {
+    display: block;
+    display: block;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+/*--------------------------------------------under construction modal*/
+.under-construction {
+    height: 50vh;
+    background: url('../images/construction.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.under-construction p {
+    color: #fff;
+    font-size: large;
+}
+.under-construction a {
+    text-decoration: none;
+    color: #fff;
+}
+.block-divider-black-slim {
+    background-color:black;
+    width: 65px;
+}
