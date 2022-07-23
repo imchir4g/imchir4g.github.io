@@ -1,0 +1,229 @@
+:root {
+  --primary-color: #ff3c41;
+  --secondary-color: #47cf73;
+  --font-color: #707070;
+  --bg-color: #fff;
+  --heading-color: #060606;
+  --footer-color: #f7f7f7;
+  --footer-cpy-color: #040a17;
+  --border-radius: 8px;
+  --border-radius-full: 15px;
+  --border-color-light: #eee;
+  --iframe-filter: grayscale(0%);
+  --bg-grey: #f9f9f9;
+  --bg-light: #fbfbfb;
+  --bg-dark-color: #fff;
+  --disable-color: #d8d6d6;
+  --box-shadow-color: rgb(0 0 0 / 10%);
+  --heading-color-2: #fff;
+  --search-shadow: rgb(0 0 0 / 5%);
+  --box-shadow-blog: rgb(0 0 0 / 7%);
+  --bg-layer-color: rgb(0 0 0 / 0%);
+  --bg-layer-color-2: rgb(0 0 0 / 44%);
+  --box-shadow-map: rgb(0 0 0 / 6%);
+  --box-shadow-color-2: rgb(0 0 0 / 8%);
+  --box-shadow-color-3: rgb(0 0 0 / 41%);
+
+}
+
+[data-theme="dark"] {
+  --primary-color: #ff3c41;
+  --secondary-color: #47cf73;
+  --font-color: #b7b7b7;
+  --bg-color: #171717;
+  --heading-color: #fdfffc;
+  --footer-color: #0e0e0e;
+  --footer-cpy-color: #060606;
+  --border-color-light: rgba(255, 255, 255, 0.2);
+  --iframe-filter: grayscale(100%);
+  --bg-grey: #0b0d0e;
+  --bg-light: #1f1d1d;
+  --bg-dark-color: #0b0d0e;
+  --footer-sub-color: #b7b7b7;
+  --disable-color: #5d5d5d;
+  --box-shadow-color: rgb(14 13 13);
+  --heading-color-2: #060606;
+  --search-shadow: rgb(6 8 8);
+  --box-shadow-blog: rgb(21 16 16);
+  --bg-layer-color: rgb(0 0 0 / 44%);
+  --bg-layer-color-2: rgb(0 0 0 / 64%);
+  --box-shadow-map: rgb(18 12 12);
+  --box-shadow-color-2: rgb(16 9 9);
+  --box-shadow-color-3: rgb(6 4 4);
+}
+
+.noscroll {
+  overflow: hidden;
+  height: 100vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-color);
+  color: var(--font-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+body a,
+button,
+.btn {
+  cursor: pointer !important;
+}
+
+.clear {
+  clear: both;
+}
+
+.img-responsive {
+  max-width: 100%;
+  display: block;
+  width: 100%;
+}
+
+.d-grid {
+  display: grid;
+}
+
+.align-self {
+  align-self: center;
+}
+
+.align-end {
+  align-self: end;
+}
+
+button,
+input,
+select,
+label,
+li,
+span {
+  -webkit-appearance: none;
+  outline: none;
+}
+
+a,
+a:hover,
+button,
+button:hover {
+  text-decoration: none;
+  transition: .5s all;
+  -moz-transition: .5s all;
+}
+
+iframe {
+  border: none;
+  display: block;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: var(--heading-color);
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--font-color);
+  letter-spacing: .2px;
+}
+
+li {
+  list-style-type: none;
+}
+
+p.white {
+  color: #eee;
+}
+
+.align-center {
+  align-self: center;
+}
+
+.noscroll {
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.radius-image {
+  border-radius: var(--border-radius);
+}
+
+.radius-image-full {
+  border-radius: var(--border-radius-full);
+}
+
+/*-- container --*/
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+/*-- //container --*/
+
+/*-- toggle switch --*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.theme-switch-wrapper em {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.theme-switch {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+}
+
+.theme-switch input {
+  display: none;
+}
+
